@@ -95,17 +95,16 @@ body{
     margin-bottom: 7%;
     margin-right: 5%;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 #sudoku {
-    background: linear-gradient(rgba(136, 126, 17, 0.774),rgba(136, 126, 17, 0.774)),url(sudoku-img.png);
+    background-image: linear-gradient(rgba(136, 126, 17, 0.966),rgba(136, 126, 17, 0.911)),url(sudoku-img.png);
 }
 #tetris {
-    background-image: url(tetris-img.png);
+    background-image: linear-gradient(rgba(203, 150, 36, 0.863),rgba(203, 150, 36, 0.897)),url(tetris-img.png);
 }
 #movie {
-    background-image: url(movie-img.png);
+    background-image: linear-gradient(rgba(15, 85, 66, 0.801),rgba(15, 85, 66, 0.836)),url(movie-img.png);
 }
 #mitsuri {
-    background-image: url(mitsuri-img.png);
+    background-image: linear-gradient(rgba(98, 11, 31, 0.904),rgba(98, 11, 31, 0.884)),url(mitsuri-img.png);
 }
