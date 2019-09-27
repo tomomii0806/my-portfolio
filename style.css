@@ -68,8 +68,19 @@ body{
         font-size: 40px;
         line-height: 60px;
     }
-    .home{
-        padding: 299.5px 0 229.5px 0;
+}
+@media screen and (max-width: 1050px){
+    .home {
+        padding: 180px 0 120px 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .headline {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .home {
+        padding: 180px 0 120px 0;
     }
 }
 #who{
@@ -97,14 +108,46 @@ body{
     background-size: cover;
 }
 #sudoku {
-    background-image: linear-gradient(rgba(136, 126, 17, 0.966),rgba(136, 126, 17, 0.911)),url(sudoku-img.png);
+    background-image: linear-gradient(rgba(136, 126, 17, 0.842),rgba(136, 126, 17, 0.911)),url(sudoku-img.png);
 }
 #tetris {
-    background-image: linear-gradient(rgba(203, 150, 36, 0.863),rgba(203, 150, 36, 0.897)),url(tetris-img.png);
+    background-image: linear-gradient(rgba(203, 150, 36, 0.726),rgba(203, 150, 36, 0.774)),url(tetris-img.png);
+    background-size: 150%;
+    background-position-y: -200px;
 }
 #movie {
     background-image: linear-gradient(rgba(15, 85, 66, 0.801),rgba(15, 85, 66, 0.836)),url(movie-img.png);
 }
 #mitsuri {
-    background-image: linear-gradient(rgba(98, 11, 31, 0.904),rgba(98, 11, 31, 0.884)),url(mitsuri-img.png);
+    background-image: linear-gradient(rgba(98, 11, 31, 0.863),rgba(98, 11, 31, 0.884)),url(mitsuri-img.png);
+}
+.title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+.language {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+li {
+    display: inline-block;
+}
+.btn {
+    text-align: center;
+    width: 215px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-left: 50%; 
+}
+.btn div{
+    font-size: 25px;
+    color: #073F46;
+    text-decoration: none;
+    padding-top: 19.5px;
 }
