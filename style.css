@@ -41,17 +41,14 @@ body{
     font-size: 20px;
     width: 200px;
     height: 40px;
-}
-#about:hover{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 .menu li a:hover{
     width: 50px;
-    height: 50px;
-    background-color: white;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8px 15px;
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
 }
 .headline {
@@ -61,12 +58,31 @@ body{
 }
 .about-me {
     color: #073F46;
-    margin: 5% 13% 10% 13%;
+    margin: 0% 13% 0% 13%;
+}
+.text-line{
+    color: #073F46;
+    width: 100%;
+    font-size: 50px; 
+    line-height: 130px;
+    padding-top: 10%;
+}
+#me {
+    font-size: 30px;
+    line-height: 50px;
 }
 @media screen and (max-width: 1100px){
     .headline {
         font-size: 40px;
         line-height: 60px;
+    }
+    .text-line{
+        font-size: 30px; 
+        line-height: 80px;
+    }
+    #me {
+        font-size: 25px;
+        line-height: 30px;
     }
 }
 @media screen and (max-width: 1050px){
@@ -76,23 +92,37 @@ body{
 }
 @media screen and (max-width: 700px){
     .headline {
-        font-size: 30px;
-        line-height: 60px;
+        font-size: 25px;
+        line-height: 35px;
     }
     .home {
-        padding: 180px 0 120px 0;
+        padding: 110px 0 50px 0;
+    }
+    .menu li a{  
+        font-size: 16.5px;
+        width: 200px;
+        height: 40px;
+    }
+    .menu li{
+        padding: 20px 20px 20px 0px;
+    }
+    .menu {
+        height: 55px;
+    }
+    .text-line{
+        font-size: 25px; 
+        line-height: 80px;
+    }
+    #me {
+        font-size: 20px;
+        line-height: 30px;
     }
 }
-#who{
-    font-size: 50px; 
-    line-height: 130px;
-}
-#me {
-    font-size: 30px;
-    line-height: 50px;
-}
+
 .project{
     margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
     padding: 0% 13%;
     max-width: 1300px;
     height: auto;
@@ -106,6 +136,11 @@ body{
     margin-bottom: 7%;
     margin-right: 5%;
     background-size: cover;
+}
+@media screen and (max-width: 375px){
+    .home {
+        padding: 90px 0 40px 0;
+    }
 }
 #sudoku {
     background-image: linear-gradient(rgba(136, 126, 17, 0.842),rgba(136, 126, 17, 0.911)),url(sudoku-img.png);
@@ -127,6 +162,9 @@ body{
     text-align: center;
     margin-top: 40px;
 }
+#movie-title {
+    font-size: 40px;
+}
 .language {
     color: white;
     font-size: 25px;
@@ -144,10 +182,119 @@ li {
     border-radius: 50px;
     margin-top: 80px;
     margin-left: 50%; 
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #073F46;
+    transition: 2s;
+}
+.btn div:hover {
+    color: white;
 }
 .btn div{
     font-size: 25px;
     color: #073F46;
     text-decoration: none;
     padding-top: 19.5px;
+}
+.contact {
+    margin: 0 auto;
+    padding: 0% 13%;
+    padding-bottom: 10%;
+    max-width: 1300px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:  #073F46;
+}
+#keep-in-touch{
+    color: rgb(180, 175, 175);
+    margin-bottom: 5%;
+}
+.images{
+    width:60px;
+    margin: 10px;
+}
+.container{
+    width: 430px;
+    height: 80px;
+    padding: 0;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background-color: rgba(11, 84, 94, 0.822);
+    cursor: pointer;
+}
+.address  {
+    padding: 0;
+    margin: 0 auto;
+    width: 330px;
+    height: auto;
+    padding-top: 20%;
+    transform: translateY(-50%);
+    color: rgb(180, 175, 175);
+    font-size: 25px;
+    float: right;
+    
+}
+@media screen and (max-width: 1300px){
+    .project {
+        padding: 0 13%;
+    }
+    .column{
+        width: 280px;
+        height: 230px;
+    } 
+    .title {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    #movie-title {
+        font-size: 25px;
+    }
+    .language {
+        font-size: 16.5px;
+        margin-top: 40px;
+    }
+    .btn {
+        width: 140px;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 50%; 
+    }
+    .btn div{
+        font-size: 18px;
+        color: #073F46;
+        text-decoration: none;
+        padding-top: 12.5px;
+    }
+}
+@media screen and (max-width: 850px){
+    .project {
+        padding: 0 5%;
+    }
+    .column {
+        margin-right: 3%;
+    }
+    .images{
+        width:40px;
+    }
+    .container{
+        width: 430px;
+        height: 60px;
+    }
+    .address  {
+        width: 300px;
+        padding-top: 15%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 530px){
+    .address {
+        display: none;
+    }
+    .container {
+        width: 60px;
+    }
 }
