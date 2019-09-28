@@ -181,7 +181,7 @@ li {
     background-color: white;
     border-radius: 50px;
     margin-top: 80px;
-    margin-left: 50%; 
+    margin: 0 auto;
     cursor: pointer;
 }
 .btn:hover {
