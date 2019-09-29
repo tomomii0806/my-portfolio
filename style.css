@@ -226,6 +226,10 @@ li {
     background-color: rgba(11, 84, 94, 0.822);
     cursor: pointer;
 }
+.container:hover{
+    background-color: rgba(5, 29, 32, 0.822);
+    transition: 0.5s;
+}
 .address  {
     padding: 0;
     margin: 0 auto;
@@ -234,7 +238,7 @@ li {
     padding-top: 20%;
     transform: translateY(-50%);
     color: rgb(180, 175, 175);
-    font-size: 25px;
+    font-size: 30px;
     float: right;
     
 }
@@ -261,13 +265,21 @@ li {
         width: 140px;
         height: 40px;
         margin-top: 30px;
-        margin-left: 50%; 
     }
     .btn div{
         font-size: 18px;
         color: #073F46;
         text-decoration: none;
         padding-top: 12.5px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .address {
+        width: 140px;
+        padding-top: 37%;
+    }
+    .container {
+        width: 230px;
     }
 }
 @media screen and (max-width: 850px){
@@ -281,12 +293,12 @@ li {
         width:40px;
     }
     .container{
-        width: 430px;
+        width: 230px;
         height: 60px;
     }
     .address  {
-        width: 300px;
-        padding-top: 15%;
+        width: 150px;
+        padding-top: 28%;
         font-size: 20px;
     }
 }
