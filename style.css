@@ -176,6 +176,7 @@ li {
 }
 .btn {
     text-align: center;
+    text-decoration: none;
     width: 215px;
     height: 60px;
     background-color: white;
